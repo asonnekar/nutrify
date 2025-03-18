@@ -1,0 +1,102 @@
+---
+import Layout from '../layouts/Layout.astro';
+import '../styles/global.css';
+---
+
+<Layout title="Nutrify - Home">
+  <section class="relative mt-8 md:mt-16 px-6 md:px-10 flex flex-col md:flex-row items-center justify-between">
+    <div class="z-10 max-w-2xl">
+      <h2 class="text-4xl md:text-6xl font-bold text-white leading-tight">
+        Learn more about <br>why nutrition matters.
+      </h2>
+      <p class="mt-4 text-lg text-green-100 max-w-lg">
+        Discover how proper nutrition can transform your health, boost your energy, and improve your overall wellbeing.
+      </p>
+      <div class="mt-8">
+        <a href="#learn-more" class="px-6 py-3 bg-[#5fe30d] text-green-900 font-bold rounded-lg hover:bg-green-300 transition duration-300 inline-flex items-center">
+          Get Started
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="hidden md:block">
+      <img src="./src/assets/avo3.png" alt="Avocado" class="w-[500px] h-[600px] object-contain">
+    </div>
+  </section>
+
+  <section id="learn-more" class="mt-20 px-6 md:px-10">
+    <h3 class="text-2xl md:text-3xl font-bold text-white mb-8 text-center">Why Choose Nutrify</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-green-400/20 hover:border-green-400/50 transition duration-300">
+        <div class="w-12 h-12 bg-[#5fe30d] rounded-full flex items-center justify-center mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+          </svg>
+        </div>
+        <h4 class="text-xl font-bold text-white mb-2">Personalized Plans</h4>
+        <p class="text-green-100">Get nutrition plans tailored to your unique body type, goals, and dietary preferences.</p>
+      </div>
+      
+      <div class="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-green-400/20 hover:border-green-400/50 transition duration-300">
+        <div class="w-12 h-12 bg-[#5fe30d] rounded-full flex items-center justify-center mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+          </svg>
+        </div>
+        <h4 class="text-xl font-bold text-white mb-2">Advice</h4>
+        <p class="text-green-100">Stay up-to-date with the latest research and recommendations.</p>
+      </div>
+      
+      <div class="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-green-400/20 hover:border-green-400/50 transition duration-300">
+        <div class="w-12 h-12 bg-[#5fe30d] rounded-full flex items-center justify-center mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+          </svg>
+        </div>
+        <h4 class="text-xl font-bold text-white mb-2">Track Progress</h4>
+        <p class="text-green-100">Monitor your nutrition goals, track macros and calories, and see your improvements over time.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="mt-20 px-6 md:px-10 py-10 bg-green-900/50">
+    <div class="max-w-6xl mx-auto">
+      <h3 class="text-2xl md:text-3xl font-bold text-white mb-8 text-center">Why Nutrition Matters</h3>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6 text-center">
+        <div>
+          <p class="text-4xl font-bold text-[#5fe30d]">70%</p>
+          <p class="text-green-100 mt-2">of health issues are linked to poor nutrition</p>
+        </div>
+        <div>
+          <p class="text-4xl font-bold text-[#5fe30d]">30%</p>
+          <p class="text-green-100 mt-2">increase in energy with proper nutrient balance</p>
+        </div>
+        <div>
+          <p class="text-4xl font-bold text-[#5fe30d]">25%</p>
+          <p class="text-green-100 mt-2">reduced risk of chronic disease</p>
+        </div>
+        <div>
+          <p class="text-4xl font-bold text-[#5fe30d]">90%</p>
+          <p class="text-green-100 mt-2">of users report improved wellbeing</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mt-16 mb-16 px-6 md:px-10">
+    <div class="max-w-2xl mx-auto text-center">
+      <h3 class="text-2xl md:text-3xl font-bold text-white mb-4">Stay Updated</h3>
+      <p class="text-green-100 mb-6">Get the latest nutrition tips and advice delivered to your inbox.</p>
+      <form class="flex flex-col sm:flex-row gap-2 justify-center">
+        <input type="email" placeholder="Your email address" class="px-4 py-3 rounded-lg bg-white/10 text-white border border-green-400/30 focus:border-green-400/70 outline-none flex-grow max-w-md" />
+        <button type="submit" class="px-6 py-3 bg-[#5fe30d] text-green-900 font-bold rounded-lg hover:bg-green-300 transition duration-300">
+          Subscribe
+        </button>
+      </form>
+    </div>
+  </section>
+  
+  
+</Layout>
